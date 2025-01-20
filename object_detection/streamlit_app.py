@@ -8,7 +8,7 @@ import time
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+# logger = logging.getLogger(__name__)
 
 def process_video_in_realtime(video_path, model):
     cap = cv2.VideoCapture(video_path)
