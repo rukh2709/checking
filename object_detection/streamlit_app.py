@@ -22,7 +22,7 @@ def process_video_in_realtime(video_path, model):
     
     frame_count = 0
     video_placeholder = st.empty()  # Placeholder for displaying the video
-
+jkkkkk;;lllllllllll
     try:
         while True:
             ret, frame = cap.read()
