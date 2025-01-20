@@ -10,13 +10,13 @@ import time
 logging.basicConfig(level=logging.INFO)
 # logger = logging.getLogger(__name__)
 
-# def process_video_in_realtime(video_path, model):
-#     cap = cv2.VideoCapture(video_path)
+def process_video_in_realtime(video_path, model):
+    cap = cv2.VideoCapture(video_path)
     
-#     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-#     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-#     fps = int(cap.get(cv2.CAP_PROP_FPS))
-#     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    fps = int(cap.get(cv2.CAP_PROP_FPS))
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     
     logger.info(f"Video properties: {width}x{height} at {fps} fps, {total_frames} frames")
     
