@@ -25,7 +25,7 @@ def process_video_in_realtime(video_path, model):
 
     try:
         while True:
-            ret, frame = cap.read()
+            ret, frame = cap
             if not ret:
                 logger.info(f"Finished processing at frame {frame_count}/{total_frames}")
                 break
